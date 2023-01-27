@@ -20,7 +20,7 @@ The required criteria are as follows:
 * WHEN the game is over, THEN I can save my initials and my score
 
 ## Links
-* [Link to the deployed website]()
+* [Link to the deployed website](https://jegaco.github.io/javascript-code-quiz/)
 
 * [Link to the code repository](https://github.com/Jegaco/jegaco-portfolio-)
 
