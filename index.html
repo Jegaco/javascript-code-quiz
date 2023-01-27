@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Know Your javascript</title>
+</head>
+  <body>
+
+        <nav>
+            <a href="./leaderboard.html"><button id="scores">View High Scores</button></a>
+            <p id="timer">Timer: 00</p>
+        </nav>
+    
+        <div class="quiz-container">
+            
+            <section class="begin-quiz" id ="play">
+                <h1>Do You Know your javascript?</h1>
+                    <p>
+                        Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by fifteen seconds!
+                    </p>
+                <button id="start">Start Quiz!</button>
+            </section>
+           
+            <section class="hide" id="quiz">
+              <h2 class="questions" id="questions"></h2>
+              <div class="choices" id="choices"></div>
+              <div class="feedback hide" id="feedback"></div>
+            </section> 
+           
+            <section class="hide" id="quiz-results">
+                <h2>Well done!</h2>
+                <p>Final Score: <span id="final-score"></span></p>
+                <label id="initials">Initials:</label>
+                <input type="text" id="name" maxlength="3">
+                <button id="submit-score" class ="submit-score">Submit</button>
+            </section>
+       
+        </div>
+
+  <script src="./assets/javascript/scores.js"></script>
+  <script src="./assets/javascript/script.js"></script>
+
+  </body>
+</html>
