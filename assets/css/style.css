@@ -1,0 +1,173 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --main: #ffaa3b;
+    --pop: rgb(240,255,255);
+    --backdrop: rgb(43, 43, 43)
+}
+
+body {
+    background-color:#ffaa3b;
+    font-family:'Courier New', Courier, monospace
+
+}
+
+body::before {
+    content:"";
+    position: absolute;
+    background: url("../images/quiz-background.png") no-repeat center  center/cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+nav {
+    padding: 20px 20px;
+}
+
+nav button {
+    background-color:var(--backdrop);
+    color: #fff;
+    padding: 10px;
+    font-size:1.5em;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+nav p {
+    float: right;
+    background-color:var(--backdrop);
+    color: #fff;
+    padding:10px;
+    font-size:1.5em;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+h1 {
+    color:white;
+}
+
+h2 {
+    font-size: 2.5em;
+    color:azure;
+}
+
+p {
+    color: white;
+    font-size: 1.5em;
+}
+ol {
+    padding-left: 0px;
+    max-height: 350px;
+}
+
+li {
+    padding: 5px;
+    list-style: decimal inside none;
+    color:white;
+    font-size: 1.5em;
+}
+
+.quiz-container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--backdrop);
+    margin: auto;
+    width: 50%;
+    padding: 100px;
+    border-radius: 5px;
+}
+
+.begin-quiz {
+   margin: auto;
+   color: #fff;
+   font-size: 1rem;
+}
+
+
+
+.begin-quiz button {
+    background-color: var(--main);
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#quiz {
+    display: flex; 
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+    padding: 10px 10px;
+    font-size: .75em;
+}
+
+.choices button {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: var(--main);
+    border-radius : 5px;
+    padding: 5px 10px;
+    color:white;
+}
+
+.hide {
+    display: none;
+} 
+
+.feedback {
+    font-size: 100%;
+    margin-top:20px;
+    padding-top:10px;
+    border-top: 2px solid white;
+}
+
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.submit-score{
+    background-color:var(--main);
+    color: #fff;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hsbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.hsbutton a {
+    text-decoration: none;
+}
+
+.hsbutton button,
+#clear{
+    display: flex;
+    justify-content: center;
+    padding : 10px;
+    width: 250px;
+    background-color: var(--main);
+    color:white;
+    font-size: 20px;
+    border-radius: 5px;
+}
